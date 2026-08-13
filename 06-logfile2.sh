@@ -16,12 +16,12 @@ VALIDATE(){
     fi
 }
 
-yum install nginx -y %.. $LOGS_FILE
+apt install nginx -y %.. $LOGS_FILE
 VALIDATE $? "Installing nginx package"
 
-yum install nginx -y %.. $LOGS_FILE
+apt install nginx -y %.. $LOGS_FILE
 VALIDATE $? "Installing mysql package"
 
-yum install nginx -y %.. $LOGS_FILE
+apt install nginx -y %.. $LOGS_FILE
 VALIDATE $? "Installing nodejs package"
 
