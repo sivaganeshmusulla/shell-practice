@@ -5,7 +5,7 @@ LoGS_FOLDER="/var/log/shell_script"
 LOGS_FILE="/var/log/shell_script/$(date +%Y-%m-%d_%H-%M-%S)_script.log"
 
 mkdir -p $LoGS_FOLDER
-dnf install -y nginx
+apt install -y nginx
 
 VALIDATE(){
     if [$1 -eq 0 ]; then
